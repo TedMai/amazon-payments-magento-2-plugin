@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Prerequisites &mdash; Amazon Payments for Magento 2 1.0.0 documentation</title>
+  <title>Prerequisites &mdash; Amazon Pay for Magento 2 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Amazon Payments for Magento 2 1.0.0 documentation" href="index.html"/>
+    <link rel="top" title="Amazon Pay for Magento 2 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Installation" href="installation.html"/>
         <link rel="prev" title="Overview" href="overview.html"/> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Amazon Payments for Magento 2
+            <a href="index.html" class="icon icon-home"> Amazon Pay for Magento 2
           
 
           
@@ -85,11 +85,10 @@
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Prerequisites</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#system-requirements">System requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#login-and-pay-with-amazon-account-setup"><strong>Login and Pay with Amazon</strong> account setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#registering-an-amazon-payments-account">Registering an Amazon Payments Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#amazon-pay-and-login-with-amazon-account-setup"><strong>Amazon Pay and Login with Amazon</strong> account setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#registering-an-amazon-pay-account">Registering an Amazon Pay Account</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#entering-identity-data-in-seller-central">Entering identity data in Seller Central</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#verification-process-verification-of-all-given-information-by-amazon-payments">Verification Process / Verification of all given information by Amazon Payments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#creating-mws-access-keys">Creating MWS access keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verification-process-verification-of-all-given-information-by-amazon-pay">Verification Process / Verification of all given information by Amazon Pay</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registering-application-for-login-with-amazon-service">Registering application for Login with Amazon service</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#add-a-website-to-your-application">Add a Website to your Application</a></li>
 </ul>
@@ -103,6 +102,8 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="login.html">Login with Amazon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flow.html">Order &amp; payment workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customisation.html">Frontend Customisation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing your integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 </ul>
@@ -118,7 +119,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Amazon Payments for Magento 2</a>
+        <a href="index.html">Amazon Pay for Magento 2</a>
       </nav>
 
 
@@ -153,7 +154,7 @@
 <h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="system-requirements">
 <h2>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
-<p><strong>Login and Pay with Amazon</strong> Magento extension requires you to have a valid <strong>Login and Pay with Amazon</strong> account (refer to the <a class="reference internal" href="#prerequisites-amazon-account-setup"><span class="std std-ref">Login and Pay with Amazon account setup</span></a> if you don&#8217;t have one yet) and a webserver running a Magento 2 store instance with following conditions met:</p>
+<p><strong>Amazon Pay and Login with Amazon</strong> Magento extension requires you to have a valid <strong>Amazon Pay and Login with Amazon</strong> account (refer to the <a class="reference internal" href="#prerequisites-amazon-account-setup"><span class="std std-ref">Amazon Pay and Login with Amazon account setup</span></a> if you don&#8217;t have one yet) and a webserver running a Magento 2 store instance with following conditions met:</p>
 <ul class="simple">
 <li>Magento CE (2.1.0)</li>
 <li>cURL for PHP</li>
@@ -161,87 +162,74 @@
 <li>valid SSL certificate (for <strong>Login with Amazon</strong> and / or IPN handling)</li>
 </ul>
 </div>
-<div class="section" id="login-and-pay-with-amazon-account-setup">
-<span id="prerequisites-amazon-account-setup"></span><h2><strong>Login and Pay with Amazon</strong> account setup<a class="headerlink" href="#login-and-pay-with-amazon-account-setup" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="registering-an-amazon-payments-account">
-<h3>Registering an Amazon Payments Account<a class="headerlink" href="#registering-an-amazon-payments-account" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="amazon-pay-and-login-with-amazon-account-setup">
+<span id="prerequisites-amazon-account-setup"></span><h2><strong>Amazon Pay and Login with Amazon</strong> account setup<a class="headerlink" href="#amazon-pay-and-login-with-amazon-account-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="registering-an-amazon-pay-account">
+<h3>Registering an Amazon Pay Account<a class="headerlink" href="#registering-an-amazon-pay-account" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Go to:<ul>
-<li>DE merchants: <a class="reference external" href="https://payments.amazon.de/preregistration/lpa?ld=SPEXDEAPAMagento">https://payments.amazon.de/preregistration/lpa</a></li>
-<li>UK merchants: <a class="reference external" href="https://payments.amazon.co.uk/preregistration/lpa?ld=SPEXUKAPAMagento">https://payments.amazon.co.uk/preregistration/lpa</a></li>
+<li>DE merchants: <a class="reference external" href="https://pay.amazon.com/de/signup">https://pay.amazon.com/de/signup</a></li>
+<li>UK merchants: <a class="reference external" href="https://pay.amazon.com/uk/signup">https://pay.amazon.com/uk/signup</a></li>
+<li>US merchants: <a href="#id1"><span class="problematic" id="id2">``</span></a><a class="reference external" href="https://pay.amazon.com/us/signup">https://pay.amazon.com/us/signup</a> &lt;<a class="reference external" href="https://pay.amazon.com/us/signup">https://pay.amazon.com/us/signup</a>&gt;`_</li>
+<li>FR merchants: <a href="#id3"><span class="problematic" id="id4">``</span></a><a class="reference external" href="https://pay.amazon.com/fr/signup">https://pay.amazon.com/fr/signup</a> &lt;<a class="reference external" href="https://pay.amazon.com/fr/signup">https://pay.amazon.com/fr/signup</a>&gt;`_</li>
+<li>IT merchants: <a href="#id5"><span class="problematic" id="id6">``</span></a><a class="reference external" href="https://pay.amazon.com/it/signup">https://pay.amazon.com/it/signup</a> &lt;<a class="reference external" href="https://pay.amazon.com/it/signup">https://pay.amazon.com/it/signup</a>&gt;`_</li>
+<li>ES merchants: <a href="#id7"><span class="problematic" id="id8">``</span></a><a class="reference external" href="https://pay.amazon.com/es/signup">https://pay.amazon.com/es/signup</a> &lt;<a class="reference external" href="https://pay.amazon.com/us/signup">https://pay.amazon.com/us/signup</a>&gt;`_</li>
 </ul>
 </li>
 <li>Click <span class="menuselection">Sign Up ‣ I&#8217;m a merchant</span></li>
 </ul>
 <img alt="_images/prerequisites_screenshot_1.png" src="_images/prerequisites_screenshot_1.png" />
 <ul class="simple">
-<li>Go through the questionnaire to find out if you qualify for using Amazon Payments, then click <cite>Sign up now</cite></li>
-<li>At the moment you cannot add your <strong>Login and Pay with Amazon</strong> account to an existing Amazon merchant account. You have to register a new account specifically for the Advanced Payments APIs.</li>
+<li>Go through the questionnaire to find out if you qualify for using Amazon Pay, then click <cite>Sign up now</cite></li>
+<li>At the moment you cannot add your <strong>Amazon Pay</strong> account to an existing Amazon merchant account. You have to register a new account specifically for Amazon Pay.</li>
 <li>Start registering a new account:<ul>
 <li>If you see the link <cite>Would you like to create a new account using a different e-mail address? Click here</cite>, please do so.</li>
 <li>Enter a name for your business. In case this name is already taken, please choose a different one.</li>
-<li>Enter an email address and a password. You should choose a role email address that will be read directly by the people responsible for the Amazon Payments integration. You should avoid general addresses like <strong>info&#64;</strong> that are only forwarded to the general administration.</li>
+<li>Enter an email address and a password. You should choose a role email address that will be read directly by the people responsible for the Amazon Pay integration. You should avoid general addresses like <strong>info&#64;</strong> that are only forwarded to the general administration.</li>
 <li>Choose a secure password.</li>
 </ul>
 </li>
 </ul>
 <img alt="_images/prerequisites_screenshot_2.png" src="_images/prerequisites_screenshot_2.png" />
 <ul class="simple">
-<li>Please fill in all requested information about your seller account, your contact information and your bank account or credit card data.</li>
-<li>Please be careful to provide exact and correct data. All information you provide will be verified by Amazon Payments, and incorrect information will delay the verification process.</li>
+<li>Please fill in all requested information about your merchant account.</li>
+<li>Please be careful to provide exact and correct data. All information you provide will be verified by Amazon Pay, and incorrect information will delay the verification process.</li>
 </ul>
 <img alt="_images/prerequisites_screenshot_3.png" src="_images/prerequisites_screenshot_3.png" />
 <ul class="simple">
-<li>After providing all information there will be an identity check on the phone, where you will be asked to enter a PIN.</li>
+<li>Please provide charge information to finish the registration</li>
 </ul>
 <img alt="_images/prerequisites_screenshot_4.png" src="_images/prerequisites_screenshot_4.png" />
 <ul class="simple">
-<li>Afterwards you can complete your registration</li>
-</ul>
-<img alt="_images/prerequisites_screenshot_5.png" src="_images/prerequisites_screenshot_5.png" />
-<ul class="simple">
 <li>After your account is registered you will be forwarded to your Seller Central account.</li>
 <li>Please be aware that you cannot fully use your account yet. First you have to provide your identity data, and then the account has to go through the verification process.</li>
+<li>It may take some time until your sandbox is ready to use.</li>
 </ul>
 </div>
 <div class="section" id="entering-identity-data-in-seller-central">
 <h3>Entering identity data in Seller Central<a class="headerlink" href="#entering-identity-data-in-seller-central" title="Permalink to this headline">¶</a></h3>
-<p>To get the verification process started, please log in to Seller Central: <a class="reference external" href="https://sellercentral-europe.amazon.com/gp/homepage.html">https://sellercentral-europe.amazon.com/gp/homepage.html</a></p>
-<p>For a combined account (<strong>Login and Pay with Amazon</strong> added to an existing account), please make sure that you have selected the <cite>Amazon Payments – Production View</cite> in the drop down menu on the top.</p>
-<img alt="_images/prerequisites_screenshot_6.png" src="_images/prerequisites_screenshot_6.png" />
+<p>To get the verification process started, please log in to Seller Central.</p>
+<p>For a combined account (<strong>Amazon Pay</strong> added to an existing account), please make sure that you have selected the <cite>Amazon Pay – Production View</cite> in the drop down menu on the top.</p>
+<img alt="_images/prerequisites_screenshot_5.png" src="_images/prerequisites_screenshot_5.png" />
 <p>At <span class="menuselection">Settings ‣ Account Info</span> please provide the requested missing information. Especially it is crucial to provide the ID information for all relevant persons.</p>
-<img alt="_images/prerequisites_screenshot_7.png" src="_images/prerequisites_screenshot_7.png" />
+<img alt="_images/prerequisites_screenshot_6.png" src="_images/prerequisites_screenshot_6.png" />
 </div>
-<div class="section" id="verification-process-verification-of-all-given-information-by-amazon-payments">
-<h3>Verification Process / Verification of all given information by Amazon Payments<a class="headerlink" href="#verification-process-verification-of-all-given-information-by-amazon-payments" title="Permalink to this headline">¶</a></h3>
-<p>After successful registration of the Amazon Payments seller account and entering the ID information Amazon Payments will check all information provided. Depending on the information provided Amazon Payments may request more information.</p>
-</div>
-<div class="section" id="creating-mws-access-keys">
-<h3>Creating MWS access keys<a class="headerlink" href="#creating-mws-access-keys" title="Permalink to this headline">¶</a></h3>
-<p>You can generate your MWS access keys in Seller Central. Please go to <span class="menuselection">Integration ‣ MWS Access Key</span></p>
-<img alt="_images/prerequisites_screenshot_8.png" src="_images/prerequisites_screenshot_8.png" />
-<img alt="_images/prerequisites_screenshot_9.png" src="_images/prerequisites_screenshot_9.png" />
-<p>Log in again with your Amazon Payments account credentials</p>
-<img alt="_images/prerequisites_screenshot_10.png" src="_images/prerequisites_screenshot_10.png" />
-<p>Make sure that you register the MWS Access Key for your own account.</p>
-<img alt="_images/prerequisites_screenshot_11.png" src="_images/prerequisites_screenshot_11.png" />
-<p>Please read and accept the license agreement.</p>
-<img alt="_images/prerequisites_screenshot_12.png" src="_images/prerequisites_screenshot_12.png" />
-<p>The AWS Access Key and the Secret Key among with the Merchant ID, will be presented to you on the next page. You can always review the key information in Seller Central on the <span class="menuselection">Integration ‣ MWS Access Key</span> page.</p>
-<img alt="_images/prerequisites_screenshot_13.png" src="_images/prerequisites_screenshot_13.png" />
+<div class="section" id="verification-process-verification-of-all-given-information-by-amazon-pay">
+<h3>Verification Process / Verification of all given information by Amazon Pay<a class="headerlink" href="#verification-process-verification-of-all-given-information-by-amazon-pay" title="Permalink to this headline">¶</a></h3>
+<p>After successful registration of the Amazon Pay seller account and entering the ID information Amazon Pay will check all information provided. Depending on the information provided Amazon Pay may request more information.</p>
 </div>
 <div class="section" id="registering-application-for-login-with-amazon-service">
 <span id="prerequisites-registering-application-for-login-with-amazon"></span><h3>Registering application for Login with Amazon service<a class="headerlink" href="#registering-application-for-login-with-amazon-service" title="Permalink to this headline">¶</a></h3>
-<p>Login and Pay with Amazon work together to provide a great buyer experience. To use <strong>Login with Amazon</strong> you have to register the application (Magento extension) that will be allowed to access buyers accounts through your Amazon Payments seller account. <strong>Login with Amazon</strong> configuration settings can be accessed through <cite>Login with Amazon</cite> Seller Central page.</p>
-<img alt="_images/prerequisites_screenshot_19.png" src="_images/prerequisites_screenshot_19.png" />
+<p><strong>Amazon Pay</strong> and &#8216;&#8217;Login with Amazon** work together to provide a great buyer experience. To use <strong>Login with Amazon</strong> you have to register the application (Magento extension) that will be allowed to access buyers accounts through your Amazon Pay seller account. <strong>Login with Amazon</strong> configuration settings can be accessed through <cite>Login with Amazon</cite> Seller Central page.</p>
+<img alt="_images/prerequisites_screenshot_7.png" src="_images/prerequisites_screenshot_7.png" />
 <p>In the App Console register a new application by clicking the <cite>Register new Application</cite> button. The <cite>Register Your Application</cite> form will appear.</p>
-<img alt="_images/prerequisites_screenshot_20.png" src="_images/prerequisites_screenshot_20.png" />
+<img alt="_images/prerequisites_screenshot_8.png" src="_images/prerequisites_screenshot_8.png" />
 <p>In the application details page, add basic details about your web site. These details will be used on your website and mobile apps (if applicable).</p>
 <ul class="simple">
 <li><cite>Name Shown to Users</cite>. This is the name displayed on the consent screen when the users agree to share the information with your web site. This name applies to website versions of your application.</li>
 <li><cite>Description</cite>. A description of your web site for Login with Amazon users.</li>
 <li><cite>Privacy Notice URL</cite>. The Privacy URL is the location of your company privacy policy. It is also displayed on the consent screen. This link is displayed to users when they first login to your application (for example: <cite>http://www.example.com/privacy.html</cite>).</li>
-<li><cite>Logo Image File</cite>. This logo will represent your business or website on Amazon. The logo will be displayed as a 150x150 pixel image; if you upload a file of a different size, it will be scaled to fit.</li>
+<li><cite>Logo Image File</cite>. This logo will represent your business or website on <strong>Amazon Pay and Login with Amazon</strong> authentication pages. The logo will be displayed as a 150x150 pixel image; if you upload a file of a different size, it will be scaled to fit.</li>
 </ul>
 <p>When you are finished, click <cite>Save</cite> to save your changes.</p>
 <div class="section" id="add-a-website-to-your-application">
@@ -249,29 +237,37 @@
 <ul class="simple">
 <li>From the Application screen, click <cite>Web Settings</cite>. You will automatically be assigned values for Client ID, which identifies your website.</li>
 </ul>
-<img alt="_images/prerequisites_screenshot_16.png" src="_images/prerequisites_screenshot_16.png" />
+<img alt="_images/prerequisites_screenshot_9.png" src="_images/prerequisites_screenshot_9.png" />
 <ul class="simple">
 <li>To add Allowed JavaScript Origins to your application, click <cite>Edit</cite>.</li>
 </ul>
 <p>An origin is the combination of protocol, your Magento shop domain name and port (for example: <cite>https://www.example.com:8443</cite>). Allowed origins must use the HTTPS protocol. If you are using a default port (443) you need only include the domain name of your shop (for example: <cite>https://www.example.com</cite>).</p>
 <p>Adding your domain here allows the SDK for JavaScript to communicate with your Magento shop directly during the login process. Web browsers normally block cross-origin communication between scripts unless the script specifically allows it.</p>
-<img alt="_images/prerequisites_screenshot_17.png" src="_images/prerequisites_screenshot_17.png" />
-<p>To add more than one origin (in case you are running domain based multi-store Magento installation and all stores are using the same Amazon Payments seller account), click <cite>Add Another</cite>.</p>
+<img alt="_images/prerequisites_screenshot_10.png" src="_images/prerequisites_screenshot_10.png" />
+<p>To add more than one origin (in case you are running domain based multi-store Magento installation and all stores are using the same Amazon Pay seller account), click <cite>Add Another</cite>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">To use Login with Amazon with your Magento shop, you <strong>MUST</strong> specify an allowed JavaScript origin.</p>
+<p class="last">To use Login with Amazon with your Magento 2 shop, you <strong>MUST</strong> specify at least one allowed JavaScript origin.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please add all allowed JavaScript Origins and Allowed Redirect URLs given by your Magento 2 shop to your Login with Amazon configuration section in the Seller Central.</p>
 </div>
 </div>
 </div>
 <div class="section" id="where-to-find-the-required-credentials-to-configure-the-magento-2-extension">
 <span id="prerequisites-where-to-find-the-required-credentials"></span><h3>Where to find the required credentials to configure the Magento 2 extension<a class="headerlink" href="#where-to-find-the-required-credentials-to-configure-the-magento-2-extension" title="Permalink to this headline">¶</a></h3>
-<p>Magento 2 extension requires you to enter information about your Amazon Payments account. This can be copied as a json string and pasted into Magento.</p>
-<p>You can find this information in your Amazon Payments seller account in <a class="reference external" href="https://sellercentral-europe.amazon.com/hz/me/integration/details">Seller Central</a>.</p>
+<p>All credentials are listed in your Seller Central account <span class="menuselection">Integration ‣ MWS Access Key</span>.</p>
+<img alt="_images/prerequisites_screenshot_11.png" src="_images/prerequisites_screenshot_11.png" />
+<p>Magento 2 extension requires you to enter information about your Amazon Pay seller account. This can be copied as a json string and pasted into Magento.</p>
+<p>You can find this information in your Amazon Pay seller account at <span class="menuselection">Integration ‣ MWS Access Key</span>.</p>
 <img alt="_images/copy-your-keys.png" src="_images/copy-your-keys.png" />
 </div>
 <div class="section" id="configuration-required-in-seller-central">
 <h3>Configuration required in Seller Central<a class="headerlink" href="#configuration-required-in-seller-central" title="Permalink to this headline">¶</a></h3>
-<p>If you&#8217;re planning to use IPN for the post-payment processing you need to enter a Merchant URL (IPN endpoint URL) in Seller Central. You can do this at :menuselection:` &#8211;&gt; <cite>, then click the `Edit</cite> button at <cite>Instant Notification Settings</cite>. IPN endpoint URL can be obtained from Magento admin at <span class="menuselection">Stores ‣ Configuration ‣ Sales ‣ Payment Methods ‣ Amazon Payments ‣ General ‣ Credentials ‣ IPN URL</span>.</p>
+<p>If you&#8217;re planning to use IPN for the post-payment processing you need to enter a Merchant URL (IPN endpoint URL) in Seller Central.</p>
+<p>You can do this at <span class="menuselection">Settings ‣ Integration Settings</span>, then click the <cite>Edit</cite> button at <cite>Instant Notification Settings</cite>.</p>
+<p>Your IPN endpoint URL can be obtained from Magento admin at <span class="menuselection">Stores ‣ Configuration ‣ Sales ‣ Payment Methods ‣ Amazon Pay ‣ General ‣ Credentials ‣ IPN URL</span>.</p>
 </div>
 </div>
 </div>

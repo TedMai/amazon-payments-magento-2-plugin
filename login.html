@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Login with Amazon &mdash; Amazon Payments for Magento 2 1.0.0 documentation</title>
+  <title>Login with Amazon &mdash; Amazon Pay for Magento 2 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Amazon Payments for Magento 2 1.0.0 documentation" href="index.html"/>
+    <link rel="top" title="Amazon Pay for Magento 2 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Order &amp; payment workflow" href="flow.html"/>
         <link rel="prev" title="Configuration" href="configuration.html"/> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Amazon Payments for Magento 2
+            <a href="index.html" class="icon icon-home"> Amazon Pay for Magento 2
           
 
           
@@ -92,6 +92,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="flow.html">Order &amp; payment workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customisation.html">Frontend Customisation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing your integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 </ul>
@@ -107,7 +108,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Amazon Payments for Magento 2</a>
+        <a href="index.html">Amazon Pay for Magento 2</a>
       </nav>
 
 
@@ -140,11 +141,11 @@
             
   <div class="section" id="login-with-amazon">
 <h1>Login with Amazon<a class="headerlink" href="#login-with-amazon" title="Permalink to this headline">¶</a></h1>
-<p><strong>Login with Amazon</strong> allows users to login to your shop using their Amazon username and password. The name, email address and user id is fetched from Amazon in order to facilitate the creation of a Magento account shipping and billing address will be retrieved as part of checkout.</p>
-<p>Customers who have logged in with Amazon previously will have a record in your database to link their Magento account to their Amazon one, If a customer is already logged in and additionally logs in with Amazon the 2 account will be linked and if a Magento customer is found with the same email address as that used on Amazon they will be asked to confirm their Magento password which will then link the 2 accounts.</p>
+<p><strong>Login with Amazon</strong> allows users to login to your shop using their Amazon username and password. The name, email address and user id is fetched from Amazon in order to facilitate the creation of a Magento account. Shipping and billing address will be retrieved as part of the checkout.</p>
+<p>Customers who have logged in via Amazon previously, will be recognized and automatically logged in into the Magento customer account as well. In case an account for the email address already exists, the accounts can be linked to add <strong>Login with Amazon</strong> as another option to sign in for the customer.</p>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
-<p><strong>Login with Amazon</strong> service requires you to have a valid <strong>Login and Pay with Amazon</strong> account (refer to the <a class="reference internal" href="prerequisites.html#prerequisites-amazon-account-setup"><span class="std std-ref">Login and Pay with Amazon account setup</span></a> if you don&#8217;t have one yet), registered application for <strong>Login with Amazon</strong> service (refer to the <a class="reference internal" href="prerequisites.html#prerequisites-registering-application-for-login-with-amazon"><span class="std std-ref">Registering application for Login with Amazon service</span></a> if you don&#8217;t have one yet) and Magento 2 store with a valid SSL certificate installed and properly configured in your shop.</p>
+<p>To offer the <strong>Login with Amazon</strong> service, you have to have a valid <strong>Amazon Pay and Login with Amazon</strong> merchant account (refer to the <a class="reference internal" href="prerequisites.html#prerequisites-amazon-account-setup"><span class="std std-ref">Amazon Pay and Login with Amazon account setup</span></a> if you don&#8217;t have one yet), registered application for <strong>Login with Amazon</strong> service (refer to the <a class="reference internal" href="prerequisites.html#prerequisites-registering-application-for-login-with-amazon"><span class="std std-ref">Registering application for Login with Amazon service</span></a> if you don&#8217;t have one yet) and Magento 2 store with a valid SSL certificate installed and properly configured in your shop.</p>
 </div>
 <div class="section" id="login-with-amazon-button">
 <h2><cite>Login with Amazon</cite> button<a class="headerlink" href="#login-with-amazon-button" title="Permalink to this headline">¶</a></h2>
